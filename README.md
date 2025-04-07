@@ -38,8 +38,26 @@ or also
 python main.py
 ```
 
-
 The API will be available at `http://127.0.0.1:8000`.
+
+
+### Training
+
+To train the MARL agents:
+
+1.  **Configure:** Set parameters like `VERSION`, `NUM_EPISODES`, `SAVE_INTERVAL`, and `RESULTS_DIR` directly within the `train_torch_iac.py` script.
+```bash
+VERSION = "v7"
+RESULTS_DIR = os.path.expanduser(f"~/torch_results/ctf_iac_{VERSION}")
+```
+
+2.  **Run Training:** Execute the training script from the project root directory:
+```bash
+python train_torch_iac.py
+```
+Training progress and results (including TensorBoard logs and saved models) will be stored in the directory specified by `RESULTS_DIR`.
+
+
 
 ### Structure
 
