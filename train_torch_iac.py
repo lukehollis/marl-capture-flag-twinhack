@@ -10,7 +10,7 @@ import os
 from ctf_env_torch import CaptureTheFlagEnvTorch, N_AGENTS_PER_TEAM, N_ACTIONS # Import the new env
 
 # --- Configuration ---
-VERSION = "v6"
+VERSION = "v7"
 ENV_NAME = f"capture_the_flag_torch_{VERSION}"
 LEARNING_RATE_ACTOR = 3e-4
 LEARNING_RATE_CRITIC = 1e-3

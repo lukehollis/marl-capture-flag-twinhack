@@ -24,8 +24,8 @@ except ImportError as e:
     exit(1)
 
 # --- Configuration ---
-MODEL_EPISODE = 3600 # Choose which saved models to load
-VERSION = "v6"
+MODEL_EPISODE = 200 # Choose which saved models to load
+VERSION = "v7"
 MODEL_DIR = os.path.expanduser(f"~/torch_results/ctf_iac_{VERSION}")
 if not os.path.exists(MODEL_DIR):
     print(f"ERROR: Model directory not found at {MODEL_DIR}")

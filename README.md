@@ -17,11 +17,27 @@ This directory contains a FastAPI application to handle the training and inferen
 
 ### Running the API
 
-Use uvicorn to run the development server:
+First, choose what version / model you want to develop with and the locations you have them on your device. Because this was just a hackathon project, I didn't do anything fancier with handling the models, so configure these variables: 
+
+```bash
+# --- Configuration ---
+MODEL_EPISODE = 200 # Choose which saved models to load
+VERSION = "v7"
+MODEL_DIR = os.path.expanduser(f"~/torch_results/ctf_iac_{VERSION}")
+```
+
+Then use uvicorn to run the development server:
 
 ```bash
 uvicorn main:app --reload
 ```
+
+or also 
+
+```bash
+python main.py
+```
+
 
 The API will be available at `http://127.0.0.1:8000`.
 
