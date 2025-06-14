@@ -24,7 +24,7 @@ except ImportError as e:
     exit(1)
 
 # --- Configuration ---
-MODEL_EPISODE = 200 # Choose which saved models to load
+MODEL_EPISODE = 10000 # Choose which saved models to load
 VERSION = "v7"
 MODEL_DIR = os.path.expanduser(f"~/torch_results/ctf_iac_{VERSION}")
 if not os.path.exists(MODEL_DIR):
